@@ -9,7 +9,7 @@ const io = socketIo(server);
 const port = process.env.PORT || 5000;
 
 io.on('connection', socket => {
-  console.log('Usuario conectado:', socket.id);
+  console.log('Usuario conectado1:', socket.id);
 
   // Escucha cuando un usuario envía una señal de WebRTC
   socket.on('signal', (data) => {
